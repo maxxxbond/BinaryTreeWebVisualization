@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Binary Tree Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #canvas-container {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            position: relative;
+        }
+        #tree-canvas {
+            width: 100%;
+            height: 100%;
+        }
+        #controls {
+            margin: 20px;
+        }
+        #controls input[type="number"] {
+            width: 160px;
+            font-size: 16px;
+            padding: 5px;
+        }
+        #controls button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Binary Tree Visualization</h1>
+    <div id="controls">
+        <input type="number" id="node-value" placeholder="Значення вузла">
+        <button id="add-node">Add</button>
+        <button id="remove-node">Remove</button>
+        <button id="search-node">Search</button>
+    </div>
+    <div id="canvas-container">
+        <canvas id="tree-canvas" width="1200" height="600"></canvas>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
